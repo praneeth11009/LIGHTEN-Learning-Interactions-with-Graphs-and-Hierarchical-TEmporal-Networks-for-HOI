@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains code for for **LIGHTEN** HOI detection pipeline, proposed in the ACM MM'20 paper: [LIGHTEN: Learning Interactions with Graph and Hierarchical TEmporal Networks for HOI in videos](). 
+This repository contains code for **LIGHTEN** HOI detection pipeline, proposed in the ACM MM'20 paper: [LIGHTEN: Learning Interactions with Graph and Hierarchical TEmporal Networks for HOI in videos](). 
 
 ![Illustration of human-object interaction detection in video (CAD-120) and image (V-COCO) settings](https://github.com/praneeth11009/LIGHTEN-Learning-Interactions-with-Graphs-and-hierarchical-TEmporal-Networks-for-HOI/blob/master/teaser.PNG)
 
@@ -35,7 +35,6 @@ LIGHTEN-Learning-Interactions-with-Graphs-and-hierarchical-TEmporal-Networks-for
     models/
   V-COCO/
     checkpoints/
-      checkpoint_CapsuleNet_trainVal.pth
     data/
       training_data.p
       testing_data.p
