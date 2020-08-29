@@ -1,0 +1,9 @@
+CAD120/data/training_data_with_RoI_features.p
+CAD120/data/testing_data_with_RoI_features.p
+CAD120/checkpoints
+V-COCO/checkpoints
+V-COCO/data/training_data_with_RoI_features.p
+V-COCO/data/testing_data_with_RoI_features.p
+CAD120/logs/
+V-COCO/logs/
+**/__pycache__/
