@@ -50,7 +50,7 @@ LIGHTEN-Learning-Interactions-with-Graphs-and-hierarchical-TEmporal-Networks-for
 cd CAD120/
 python compute_RoI_feats.py
 ```
-  - This will create two new files at CAD120/data/, which contain image features from backbone module
+  - This will create two new files at CAD120/data/, which contain image features from backbone module. Alternately, the precomputed feature files can be downloaded from this [google drive folder](https://drive.google.com/drive/u/1/folders/1D3hlDb6YN0BvayYF_ij7DESErlA8vcxY).
 - Training and Testing the LIGHTEN model for CAD120 can be done as follows : 
 ```
 cd CAD120/
