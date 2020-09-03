@@ -19,7 +19,9 @@ pip install -r requirements.txt
 - Download RGB frames for CAD120 videos from [CAD120 dataset page](http://pr.cs.cornell.edu/web3/CAD-120/)
 - Download COCO image directory (traintest2017) from [COCO website](https://cocodataset.org/#download)
 ### Pre-trained models
-Download the pretrained models from this [site](link)
+Download the pretrained models from the following folders :
+i) [CAD120 checkpoints](https://drive.google.com/drive/folders/1m0TX4FRCsDZILhhd0tX1OklYEtrctTDj?usp=sharing)
+ii) [V-COCO checkpoints](https://drive.google.com/drive/folders/1Eyia8iwryix7Pb3Hx-iVwgANOma4IKaO?usp=sharing)
 ### Configuration
 Set the corresponding paths to data and pre-trained models in config.py file. Hyper-paramters and model configurations can be set from this file.
 The directory structure after setting up looks like : 
