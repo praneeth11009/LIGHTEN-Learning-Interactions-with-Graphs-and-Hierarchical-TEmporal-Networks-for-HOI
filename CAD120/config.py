@@ -4,10 +4,10 @@ from easydict import EasyDict as edict
 cfg = edict()
 
 # GPU to use for training/testing
-cfg.GPU = '0'
+cfg.GPU = '2'
 
 # Parent directory, for the code base
-cfg.PARENT_DIR = '/home/safeer/hoi_graph/LIGHTEN-Learning-Interactions-with-Graphs-and-hierarchical-TEmporal-Networks-for-HOI/CAD120/'
+cfg.PARENT_DIR = '/home/safeer/hoi_graph/LIGHTEN-Learning-Interactions-with-Graphs-and-Hierarchical-TEmporal-Networks-for-HOI/CAD120/'
 
 # path to CAD 120 RGB frames directory
 cfg.CAD120_IMAGE_DIR = '/home/safeer/hoi_graph/dataset/All_subjects_images'
@@ -32,8 +32,8 @@ cfg.TASK = 'detection'
 cfg.TRAIN = edict() 
 
 # Indicate whether to train upto frame-level subnet, or the entire model
-# cfg.TRAIN_LEVEL = 'frame'
-cfg.TRAIN_LEVEL = 'segment'
+cfg.TRAIN_LEVEL = 'frame'
+# cfg.TRAIN_LEVEL = 'segment'
 
 # Initial learning rate
 cfg.TRAIN.LEARNING_RATE = 2e-5

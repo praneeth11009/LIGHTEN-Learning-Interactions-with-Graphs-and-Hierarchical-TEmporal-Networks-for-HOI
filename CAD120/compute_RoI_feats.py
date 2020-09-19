@@ -7,6 +7,7 @@ import cv2
 import math
 import torch.nn as nn
 import torch
+from glob import glob
 from skimage.transform import resize
 
 from config import cfg
@@ -17,7 +18,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = cfg.GPU
 def read_segment_images(blobs):
     seg_frames_nums = blobs['seg_frames']
     video_id = blobs['video_id']
-    frames_dir = os.path.join(cfg.CAD120_IMAGE_DIR, video_id)
+    frames_dir = [y for x in os.walk(cfg.CAD120_IMAGE_DIR) for y in glob(os.path.join(x[0], str(video_id)))][0]
 
     start_frame, end_frame = seg_frames_nums[0], seg_frames_nums[1]
     prev_im = np.zeros((480, 640, 3))
