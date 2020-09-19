@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains code for for **LIGHTEN** HOI detection pipeline, proposed in the ACM MM'20 paper: [LIGHTEN: Learning Interactions with Graph and Hierarchical TEmporal Networks for HOI in videos](). 
+This repository contains code for **LIGHTEN** HOI detection pipeline, proposed in the ACM MM'20 paper: [LIGHTEN: Learning Interactions with Graph and Hierarchical TEmporal Networks for HOI in videos](). 
 
 ![Illustration of human-object interaction detection in video (CAD-120) and image (V-COCO) settings](https://github.com/praneeth11009/LIGHTEN-Learning-Interactions-with-Graphs-and-hierarchical-TEmporal-Networks-for-HOI/blob/master/teaser.PNG)
 
@@ -19,7 +19,9 @@ pip install -r requirements.txt
 - Download RGB frames for CAD120 videos from [CAD120 dataset page](http://pr.cs.cornell.edu/web3/CAD-120/)
 - Download COCO image directory (traintest2017) from [COCO website](https://cocodataset.org/#download)
 ### Pre-trained models
-Download the pretrained models from this [site](link)
+Download the pretrained models from the following folders :
+i) [CAD120 checkpoints](https://drive.google.com/drive/folders/1m0TX4FRCsDZILhhd0tX1OklYEtrctTDj?usp=sharing)
+ii) [V-COCO checkpoints](https://drive.google.com/drive/folders/1Eyia8iwryix7Pb3Hx-iVwgANOma4IKaO?usp=sharing)
 ### Configuration
 Set the corresponding paths to data and pre-trained models in config.py file. Hyper-paramters and model configurations can be set from this file.
 The directory structure after setting up looks like : 
@@ -35,7 +37,6 @@ LIGHTEN-Learning-Interactions-with-Graphs-and-hierarchical-TEmporal-Networks-for
     models/
   V-COCO/
     checkpoints/
-      checkpoint_CapsuleNet_trainVal.pth
     data/
       training_data.p
       testing_data.p
@@ -51,7 +52,7 @@ LIGHTEN-Learning-Interactions-with-Graphs-and-hierarchical-TEmporal-Networks-for
 cd CAD120/
 python compute_RoI_feats.py
 ```
-  - This will create two new files at CAD120/data/, which contain image features from backbone module
+  - This will create two new files at CAD120/data/, which contain image features from backbone module. Alternately, the precomputed feature files can be downloaded from this [google drive folder](https://drive.google.com/drive/u/1/folders/1D3hlDb6YN0BvayYF_ij7DESErlA8vcxY).
 - Training and Testing the LIGHTEN model for CAD120 can be done as follows : 
 ```
 cd CAD120/
